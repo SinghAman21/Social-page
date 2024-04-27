@@ -1,0 +1,171 @@
+@font-face{
+    font-family: "Inter-bold";
+    src: url(assets/fonts/static/Inter-Bold.ttf) format('truetype'); 
+}
+
+@font-face {
+    font-family: "regular";
+    src: url(assets/fonts/static/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: "tag";
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+@font-face {
+    font-family: "semi";
+    src: url(assets/fonts/static/Inter-SemiBold.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+}
+
+.container{
+    background-color: rgb(49, 48, 48);
+    height: 76.5vh;
+    width: 25rem;
+    margin-top: 3%;
+    margin-left: 36.5%;
+    border-radius: 10px;
+}
+
+#avatar{
+    margin-top: 1rem;
+    border-radius: 50%;
+    margin-left: 9.3rem;
+}
+#name{
+    text-align: center;
+    color: white;
+    font-family: "regular";
+}
+
+#location{
+    text-align: center;
+    color: rgb(133, 189, 10) ;
+    font-family: "tag";
+}
+#tag{
+    text-align: center;
+    color: white;
+    font-family: "semi";
+}
+.social{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+.platforms{
+    margin-left: 3rem;
+    height: 3rem;
+    width: 19rem;
+    background-color: rgb(76, 75, 76);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content:  center;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    color: white;
+    /* font-weight: bold; */
+    font-family: "Inter-bold" , sans-serif;
+    transition: all 0.2s ease-in;
+}
+
+.platforms:hover{
+    color: rgb(49, 48, 48);
+    background-color: rgb(169, 233, 32);
+}
+
+.social:nth-child(){
+    padding-bottom: 20px;
+}
+
+.attribution{
+    color: white;
+    text-align: center;
+    font-family: "Inter-bold";
+}
+
+
+/* =====================
+mobile view
+===================== */
+
+@media screen and (max-width : 426px) {
+    .container{
+        background-color: rgb(49, 48, 48);
+        height: 85.5vh;
+        width: 22rem;
+        margin-top: 9%;
+        margin-left: 8.5%;
+        border-radius: 10px;
+    }
+    
+    #avatar{
+        margin-top: 1rem;
+        border-radius: 50%;
+        margin-left: 8.1rem;
+    }
+    #name{
+        text-align: center;
+        color: white;
+        font-family: "regular";
+    }
+    
+    #location{
+        text-align: center;
+        color: rgb(133, 189, 10) ;
+        font-family: "tag";
+    }
+    #tag{
+        text-align: center;
+        color: white;
+        font-family: "semi";
+    }
+    .social{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2rem;
+    }
+    
+    .platforms{
+        margin-left: 1.5rem;
+        height: 3rem;
+        width: 19rem;
+        background-color: rgb(76, 75, 76);
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content:  center;
+        border-radius: 15px;
+        margin-bottom: 1rem;
+        color: white;
+        /* font-weight: bold; */
+        font-family: "Inter-bold" , sans-serif;
+        transition: all 0.2s ease-in;
+    }
+    
+    .platforms:hover{
+        color: rgb(49, 48, 48);
+        background-color: rgb(169, 233, 32);
+    }
+    
+    .social:nth-child(){
+        padding-bottom: 20px;
+    }
+    
+    .attribution{
+        color: white;
+        text-align: center;
+        font-family: "Inter-bold";
+    }
+}
